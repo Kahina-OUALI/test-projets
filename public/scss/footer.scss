@@ -6,6 +6,13 @@ footer {
     h6 {
         @extend %title-footer;
     }
+    a {
+        @extend %a-footer;
+    }
+    p,
+    .holiday {
+        @extend %text-footer;
+    }
     .contact {
         h4,
         h5,
@@ -23,6 +30,53 @@ footer {
                     @extend %a-footer;
                 }
             }
+        }
+    }
+    .news {
+        p {
+            text-align: justify;
+            @extend %text-footer;
+            margin: 0px 0px 10px 0px;
+        }
+        .form {
+            input {
+                width: 100%;
+                padding: 5px;
+                margin-top: 10px;
+                @extend %text-footer;
+                border: 1px solid $brown !important;
+                background-color: transparent !important;
+                &::placeholder {
+                    @extend %text-footer;
+                }
+            }
+            .btn {
+                margin-top: 20px;
+                @extend %button-footer;
+            }
+        }
+    }
+    .hours {
+        .holiday {
+            color: $brown;
+            font-weight: 800;
+            font-size: 10px;
+            text-align: justify;
+            text-decoration: underline;
+            font-family: $text;
+        }
+        strong {
+            color: $coral;
+        }
+    }
+    @media screen and (max-width: $layout-breakpoints-xxs) {
+        .contact,
+        .news,
+        .members {
+            margin-bottom: 26px;
+        }
+        .nav {
+            margin-bottom: 10px;
         }
     }
 }

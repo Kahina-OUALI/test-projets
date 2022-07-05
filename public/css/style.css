@@ -1,10 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-footer .nav ul li a {
+footer .nav ul li a, footer a {
   font-size: 10px;
   color: #EFE4CB;
   text-decoration: none;
@@ -24,7 +25,8 @@ footer h6 {
   font-family: "Antic Didone", serif;
 }
 
-footer .contact p {
+footer .news .form input::placeholder, footer .news .form input, footer .news p, footer .contact p, footer p,
+footer .holiday {
   color: #EFE4CB;
   font-weight: 300;
   font-size: 10px;
@@ -32,9 +34,86 @@ footer .contact p {
   font-family: "Nunito Sans", sans-serif;
 }
 
+footer .news .form .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #EFE4CB;
+  text-align: center;
+  border-radius: 0px;
+  transition: all 0.5s;
+  letter-spacing: 3px;
+  border: 0.5px solid #D08C60;
+  background-color: transparent;
+  font-family: "Antic Didone", serif;
+}
+footer .news .form .btn span {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-family: "Antic Didone", serif;
+}
+footer .news .form .btn span::after {
+  top: 0;
+  opacity: 0;
+  right: -20px;
+  content: "»";
+  transition: 0.5s;
+  position: absolute;
+}
+footer .news .form .btn:hover {
+  border: 0.5px solid #C59F7B;
+  background: #C59F7B;
+}
+footer .news .form .btn:hover span {
+  padding-right: 25px;
+}
+footer .news .form .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 footer {
   padding: 3rem 0 3rem 0;
   background-color: #2D2926;
+}
+footer .news p {
+  text-align: justify;
+  margin: 0px 0px 10px 0px;
+}
+footer .news .form input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #C59F7B !important;
+  background-color: transparent !important;
+}
+footer .news .form .btn {
+  margin-top: 20px;
+}
+footer .hours .holiday {
+  color: #C59F7B;
+  font-weight: 800;
+  font-size: 10px;
+  text-align: justify;
+  text-decoration: underline;
+  font-family: "Nunito Sans", sans-serif;
+}
+footer .hours strong {
+  color: #D08C60;
+}
+@media screen and (max-width: 480px) {
+  footer .contact,
+footer .news,
+footer .members {
+    margin-bottom: 26px;
+  }
+  footer .nav {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
