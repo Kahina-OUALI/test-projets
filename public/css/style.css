@@ -25,7 +25,7 @@ footer h6 {
   font-family: "Antic Didone", serif;
 }
 
-footer .news .form input::placeholder, footer .news .form input, footer .news p, footer .contact p, footer p,
+footer .copyright .copy, footer .news .form input::placeholder, footer .news .form input, footer .news p, footer .contact p, footer p,
 footer .holiday {
   color: #EFE4CB;
   font-weight: 300;
@@ -105,14 +105,43 @@ footer .hours .holiday {
 footer .hours strong {
   color: #D08C60;
 }
+footer .separator {
+  height: 1px;
+  margin-bottom: 26px;
+  background-color: #c59f7b7e;
+}
+footer .warning p {
+  text-align: end;
+}
+footer .warning p i {
+  color: #D08C60;
+}
+footer .reseaux a {
+  margin-right: 10px;
+}
+footer .reseaux a i {
+  color: #D08C60;
+}
+footer .copyright {
+  text-align: end;
+}
+footer .copyright .copy {
+  color: #C59F7B !important;
+}
 @media screen and (max-width: 480px) {
   footer .contact,
 footer .news,
-footer .members {
+footer .hours {
     margin-bottom: 26px;
   }
   footer .nav {
     margin-bottom: 10px;
+  }
+  footer .warning p {
+    text-align: left;
+  }
+  footer .copyright {
+    text-align: left;
   }
 }
 

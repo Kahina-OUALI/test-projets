@@ -69,14 +69,50 @@ footer {
             color: $coral;
         }
     }
+    .separator {
+        height: 1px;
+        margin-bottom: 26px;
+        background-color: $separator;
+    }
+    .warning {
+        p {
+            text-align: end;
+            i {
+                color: $coral;
+            }
+        }
+    }
+    .reseaux {
+        a {
+            margin-right: 10px;
+            i {
+                color: $coral;
+            }
+        }
+    }
+    .copyright {
+        text-align: end;
+        .copy {
+            color: $brown !important;
+            @extend %text-footer;
+        }
+    }
     @media screen and (max-width: $layout-breakpoints-xxs) {
         .contact,
         .news,
-        .members {
+        .hours {
             margin-bottom: 26px;
         }
         .nav {
             margin-bottom: 10px;
+        }
+        .warning {
+            p {
+                text-align: left;
+            }
+        }
+        .copyright {
+            text-align: left;
         }
     }
 }
