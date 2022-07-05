@@ -1,0 +1,150 @@
+// Générales :
+
+$black: #2D2926;
+$beige: #EFE4CB;
+$coral: #D08C60;
+$brown: #C59F7B;
+$second-black: #2D2D2D;
+$grey: #E4E4E4;
+$separator: #c59f7b7e; 
+
+$title: 'Antic Didone', serif;
+$text: 'Nunito Sans', sans-serif;
+
+// Responsive : 
+
+$layout-breakpoints-xxx-s: 320px;
+$layout-breakpoints-xxxs: 414px;
+$layout-breakpoints-xxs: 480px;
+$layout-breakpoints-xs: 750px;
+$layout-breakpoints-xsm: 780px;
+$layout-breakpoints-sm: 1024px;
+$layout-breakpoints-xs-sm: 1170px;
+
+// Autres variables :  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// NAV
+
+%a-nav {
+    font-size: 12px; 
+    color: $beige;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $text;
+    i {
+        color: $coral;
+    }
+}
+%a-shop {
+    font-size: 12px; 
+    color: $beige;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $text;
+    .icon-user {
+        color: $coral;
+    }
+    .icon-shop {
+        color: $brown;
+    }
+}
+%a-footer {
+    font-size: 10px;
+    color: $beige;
+    text-decoration: none;
+    font-family: $text;
+}
+
+// DROPDOWN 
+
+%a-drop {
+    font-size: 9.3px;
+    color: $beige;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $text;
+    i {
+        color: $coral;
+    }
+}
+
+// TITLE & TEXT 
+
+%title {
+    font-weight: 600;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    font-family: $title;
+}
+%title-footer {
+    font-size: 13px;
+    font-weight: 600;
+    color: $coral;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    font-family: $title;
+}
+%text-footer {
+    color: $beige;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: justify;
+    font-family: $text;
+}
+
+// BUTTONS
+
+%button-footer {
+    width: 80%;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    color: $beige;
+    text-align: center;
+    border-radius: 0px;
+    transition: all 0.5s;
+    letter-spacing: 3px;
+    border: 0.5px solid $coral;
+    background-color: transparent;
+    font-family: $title;
+    span {
+        cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 3px;
+        font-family: $title;
+        &::after {
+            top: 0;
+            opacity: 0;
+            right: -20px;
+            content: "\00bb";
+            transition: 0.5s;
+            position: absolute;
+        }
+    }
+    &:hover {
+        border: 0.5px solid $brown;
+        background: $brown;
+		span {
+            padding-right: 25px;
+			&:after {
+				opacity: 1;
+				right: 0;
+			}
+		}
+	}
+}

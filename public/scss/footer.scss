@@ -1,0 +1,14 @@
+footer {
+    padding: 3rem 0 3rem 0;
+    background-color: $black;
+    .contact {
+        h4,
+        h5,
+        h6 {
+            @extend %title-footer;
+        }
+        p {
+            @extend %text-footer;
+        }
+    }
+}
