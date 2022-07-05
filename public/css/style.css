@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+footer .nav ul li a {
+  font-size: 10px;
+  color: #EFE4CB;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 footer .contact h4,
 footer .contact h5,
-footer .contact h6 {
+footer .contact h6, footer h4,
+footer h5,
+footer h6 {
   font-size: 13px;
   font-weight: 600;
   color: #D08C60;
